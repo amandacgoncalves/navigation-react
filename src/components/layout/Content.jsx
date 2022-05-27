@@ -1,10 +1,18 @@
+import "./Content.css";
 import React from "react";
-import './Content.css'
+import About from "../../views/examples/About";
+import Home from "../../views/examples/Home";
+import { Routes, Route } from "react-router-dom";
 
-const Content = props => (
+    const Content = (props) => {
+  return (
     <main className="Content">
-        <h1>Componente Content</h1>
+      <Routes>
+        <Route path="/home" element={ <Home/> } />
+        <Route path="/about" element={ <About/> } />
+      </Routes>
     </main>
-)
+  );
+};
 
-export default Content
+export default Content;
