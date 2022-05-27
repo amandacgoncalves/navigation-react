@@ -4,7 +4,7 @@ const Home = props => (
     <div className="Home">
         <h1>Início</h1>
 
-        <p>Bem vinda!</p>
+        <h2>Bem vinda!</h2>
     </div>
 )
 
